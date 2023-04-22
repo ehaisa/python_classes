@@ -2,6 +2,7 @@ print("Olá, boas vindas ao comparador de idades!")
 
 user1 = input("Qual o nome do usuário 1? ")
 user2 = input("E qual o nome do usuário 2? ")
+
 idade1 = int(input("Por favor, %s, nos informe a sua idade: "% user1))
 idade2 = int(input("%s, agora nos informe a sua idade: "% user2))
 
