@@ -10,4 +10,4 @@ if media >= 7.0:
 else:
     print("Pena, você foi reprovado!")
 
-    # ESTA VERSÃO NÃO É INDICADA, POIS FUNCIONA APENAS COM APENAS 3 NOTAS
+    # ESTA VERSÃO ESTÁ ERRADA, POIS NOTAS SÃO DE VALOR FLOAT, NÃO INT
