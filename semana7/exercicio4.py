@@ -11,3 +11,5 @@ if media >= 7.0:
     print("Parabéns! Você foi aprovado!")
 else:
     print("Pena... você foi reprovado.")
+
+    # A PARTIR DESSA VERSÃO, O PROGRAMA PASSA A FUNCIONAR COM A QUANTIDADE DE NOTAS QUE O USUÁRIO QUISER, OU SEJA, N VEZES
