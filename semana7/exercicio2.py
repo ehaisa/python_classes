@@ -9,3 +9,5 @@ if media >= 7.0:
     print("Parabéns! Você foi aprovado")
 else:
     print("Pena, você foi reprovado!")
+
+    # ESTA VERSÃO NÃO É INDICADA, POIS FUNCIONA APENAS COM APENAS 3 NOTAS
