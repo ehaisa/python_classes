@@ -1,6 +1,6 @@
 soma = 0
 i = 1
-while i <= 3:
+while i <= 3:     # AQUI A QUANTIDADE DE NOTAS É LIMITADO PARA 3
     nota = float(input("Informe a nota %d: "% i))
     soma = soma + nota
     i = i + 1
@@ -10,3 +10,5 @@ if media >= 7.0:
     print("Parabéns! Você foi aprovado.")
 else:
     print("Pena, você foi reprovado.")
+
+    # ESTA VERSÃO CONTINUA FUNCIONANDO COM APENAS 3 NOTAS
