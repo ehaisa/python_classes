@@ -11,3 +11,4 @@ else:
     print("Pena, você foi reprovado!")
 
     # ESTA VERSÃO ESTÁ ERRADA, POIS NOTAS SÃO DE VALOR FLOAT, NÃO INT
+    # ELA TAMBÉM SÓ IRÁ FUNCIONAR COM APENAS 3 NOTAS
