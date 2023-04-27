@@ -1,6 +1,6 @@
 i = 1
 soma = 0
-n = int(input("Quantas notas? "))
+n = int(input("Quantas notas? "))  # AO SETAR UMA VARIÁVEL, O PROGRAMA NÃO LIMITA UMA QUANTIDADE DE NOTAS
 while i <= n:
     nota = float(input("Informe a nota: "))
     soma = soma + nota
