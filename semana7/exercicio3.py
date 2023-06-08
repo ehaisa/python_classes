@@ -38,5 +38,5 @@ print("Empates :", emp, f"({(emp/partidas)*100:.2f}% das partidas)")
 print("--------------")
 print("Fim do Programa")
 
-#A variável de pontos é dividida pela quantidade de partidas e depois multiplicada por 100, então,
-#o comando .2f% na frente deixa o resultado no formato correto.
+#A variável de pontos é dividida pela quantidade de partidas e depois multiplicada por 100,
+# então, o comando .2f% na frente deixa o resultado no formato correto.
