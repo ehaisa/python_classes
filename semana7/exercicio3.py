@@ -1,15 +1,42 @@
-soma = 0
-i = 1
-while i <= 3:     # AQUI A QUANTIDADE DE NOTAS É LIMITADO PARA 3
-    nota = float(input("Informe a nota %d: "% i))
-    soma = soma + nota
-    i = i + 1
-media = soma / 3
-print("Sua media foi: %.1f"% media)
-if media >= 7.0:
-    print("Parabéns! Você foi aprovado.")
-else:
-    print("Pena, você foi reprovado.")
+#A cada partida, o programa deverá exibir o resultado de cada um dos dados e indicar
+#quem foi o vencedor ou se houve empate
+#Ao final da partida, o programa deve perguntar ao usuário se ele deseja jogar novamente.
+#Caso ele opte por continuar o jogo, este deve ser executado novamente a partir do início
+#Caso ele deseje encerrar a disputa, o programa deverá exibir o número de vitórias do jogador,
+#o número de vitórias do computador e o número de empates
 
-    # ESTA VERSÃO CONTINUA FUNCIONANDO COM APENAS 3 NOTAS
-    # A PARTIR DESTE PONTO É COMEÇADO A USAR A "FUNÇÃO" CHAMADA DE ACUMULADOR
+import random
+Wjog = 0
+Wcomp = 0
+emp = 0
+partidas = 0
+resp = input("Deseja jogar (SIM/NÃO)? ")
+while resp.lower() == "sim":          #o método 'lower()' permite que o usuário digite "sim" ou "SIM" sem distinção
+    jog = random.randint(1, 6)
+    comp = random.randint(1, 6)
+    print("Jogador: ", jog)
+    print("Computador: ", comp)
+    if jog > comp:
+        print("Jogador Ganhou!")
+        Wjog += 1
+    elif comp > jog:
+        print("Computador Ganhou!")
+        Wcomp += 1
+    else:
+        print("Empate!")
+        emp += 1
+    partidas += 1
+    resp = input("Deseja jogar novamente (SIM/NÃO)? ")
+print()
+print("Jogo encerrado!")
+print("Quantidade de partidas jogadas: ", partidas)
+print("Placar Final")
+print("--------------")
+print("Jogador: ", Wjog, f"({(Wjog/partidas)*100:.2f}% das partidas)")
+print("Computador:", Wcomp, f"({(Wcomp/partidas)*100:.2f}% das partidas)")
+print("Empates :", emp, f"({(emp/partidas)*100:.2f}% das partidas)")
+print("--------------")
+print("Fim do Programa")
+
+#A variável é dividida pela quantidade de partidas e depois multiplicada por 100, então,
+#o comando .2f% na frente deixa o resultado no formato correto.
