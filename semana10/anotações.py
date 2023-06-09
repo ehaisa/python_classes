@@ -19,4 +19,4 @@ cubo = [[[1, 2], [3, 4]],
 print(cubo[1][0][0])
 # pode ser acessado usando três índices: um para selecionar a "fatia", um para selecionar a linha e outro
 # para selecionar a coluna.
-# Por exemplo, cubo[0][1][0] retorna o primeiro elemento da segunda linha da primeira "fatia",que é 3. 
+# Por exemplo, cubo[1][0][0] retorna o primeiro elemento da primeira linha da segunda "fatia",que é 5. 
