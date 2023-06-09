@@ -32,11 +32,8 @@ print("Jogo encerrado!")
 print("Quantidade de partidas jogadas: ", partidas)
 print("Placar Final")
 print("--------------")
-print("Jogador: ", Wjog, f"({(Wjog/partidas)*100:.2f}% das partidas)")
-print("Computador:", Wcomp, f"({(Wcomp/partidas)*100:.2f}% das partidas)")
-print("Empates :", emp, f"({(emp/partidas)*100:.2f}% das partidas)")
+print("Jogador: ", Wjog)
+print("Computador:", Wcomp)
+print("Empates :", emp)
 print("--------------")
 print("Fim do Programa")
-
-#A variável de pontos é dividida pela quantidade de partidas e depois multiplicada por 100,
-# então, o comando .2f% na frente deixa o resultado no formato correto.
