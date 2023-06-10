@@ -39,3 +39,19 @@ lista1 += [20]    # Outra maneira de adição
 print(lista1)
 lista1.append(30) # O método append() adiciona um elemento ao final de uma lista existente
 print(lista1)
+
+# COMO ALTERAR UM ELEMENTO: usa-se vetor[elemento] = novo valor. Um exemplo:
+
+vetor = [14, 37, 18, 92, 77, 64]
+print("Lista original")
+print(vetor)
+vetor[0] = 99
+print("Lista modificada")
+print(vetor)
+print("Elementos individuais")
+print("Valor [0] =", vetor[0])
+print("Valor [1] =", vetor[1])
+print("Valor [2] =", vetor[2])
+print("Valor [3] =", vetor[3])
+print("Valor [4] =", vetor[4])
+print("Valor [5] =", vetor[5])
