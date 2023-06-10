@@ -23,8 +23,8 @@ print(temp)
 tam = len(temp)
 for i in range(tam-1):
   for j in range(i+1, tam):
-    if temp[i] > temp[j]:
-      aux = temp[i]
+    if temp[i] > temp[j]:   # se a condição for verdadeira, os valores são invertidos
+      aux = temp[i]  # é criado uma variável para para armazenar temporariamente o valor do elemento atual e fazer a troca
       temp[i] = temp[j]
       temp[j] = aux
 print("Lista Ordenada")
@@ -32,3 +32,8 @@ print(temp)
 
 
 # temp.sort(): Esse método é usado para ordenar a lista temp em ordem crescente. 
+# ao usar o (reverse=True), os elementos são reorganizados em sequência numérica decrescente.
+# tam = len(temp): atribui o comprimento da lista temp à variável tam. Ou seja, tam irá conter
+# o número de elementos presentes na lista.
+# O loop externo (for i in range(tam-1)) percorre todos os elementos da lista, exceto o último.
+# O loop interno (for j in range(i+1, tam)) percorre os elementos à frente do elemento atual (índice i) no loop externo.
