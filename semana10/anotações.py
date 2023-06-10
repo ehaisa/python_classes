@@ -19,4 +19,23 @@ cubo = [[[1, 2], [3, 4]],
 print(cubo[1][0][0])
 # pode ser acessado usando três índices: um para selecionar a "fatia", um para selecionar a linha e outro
 # para selecionar a coluna.
-# Por exemplo, cubo[1][0][0] retorna o primeiro elemento da primeira linha da segunda "fatia",que é 5. 
+# Por exemplo, cubo[1][0][0] retorna o primeiro elemento da primeira linha da segunda "fatia",que é 5.
+
+#Vetores/arrays em Python são flexíveis, ou seja, o conjunto de índices não é fixo. Podem crescer ou diminuir durante
+# a execução do programa sempre que um novo valor for adicionado ou retirado, além de poder conter elementos de tipos 
+# diferentes. A estrutura de dados mais comum em Python é a "lista", alguns exemplo:
+
+numeros = [1, 2, 3, 4, 5]  # Uma lista de números inteiros
+nomes = ["João", "Marcela", "Pedro"]  # Uma lista de strings
+agenda = ["Judite", 83999877654, 1.68, 69.3, "12/10/2002", "João Pessoa", True] # Lista com diferentes tipos de elementos
+
+# PRÁTICA #
+
+lista1 = []    # A lista é incialmente criada vazia, para armazenar dados depois.
+print(lista1)
+lista1 = lista1 + [10]     # Valor 10 é adicionado a ela
+print(lista1)
+lista1 += [20]    # Outra maneira de adição
+print(lista1)
+lista1.append(30) # O método append() adiciona um elemento ao final de uma lista existente
+print(lista1)
